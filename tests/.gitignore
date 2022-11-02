@@ -1,0 +1,17 @@
+*~
+*.a
+*.bak
+*.o
+*.old
+*.orig
+*.out
+*.pyc
+*.pyo
+*.so
+*.swp
+cscope.out
+tags
+test
+_test1
+_test2
+

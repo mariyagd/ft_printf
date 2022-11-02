@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_u_putnbr_fd.c                                   :+:      :+:    :+:   */
+/*   ft_printf_unsint.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdanchev <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/18 10:31:49 by mdanchev          #+#    #+#             */
-/*   Updated: 2022/10/29 16:21:22 by mdanchev         ###   ########.fr       */
+/*   Created: 2022/11/02 14:41:02 by mdanchev          #+#    #+#             */
+/*   Updated: 2022/11/02 14:48:17 by mdanchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
 #include "libft/libft.h"
 
-void	ft_u_putnbr_fd(unsigned int n, int fd)
+void	ft_printf_unsint(unsigned int n, int fd, int *count)
 {
-	if (n > 9)
-	{
-		ft_u_putnbr_fd(n / 10, fd);
-		ft_u_putnbr_fd((n % 10), fd);
-	}
-	else
-		ft_putchar_fd((char)(n + 48), fd);
+    ft_put_unsnbr_fd(n, fd);
+    *count += ft_count_unsigned_int(n);
 }
