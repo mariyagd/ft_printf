@@ -6,10 +6,9 @@
 /*   By: mdanchev <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:24:51 by mdanchev          #+#    #+#             */
-/*   Updated: 2022/11/02 16:57:23 by mdanchev         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:55:14 by mdanchev         ###   lausanne.ch       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft/libft.h"
 #include "ft_printf.h"
 
 void	ft_printf_char(char c, int fd, int *count)

@@ -6,11 +6,10 @@
 /*   By: mdanchev <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:01:55 by mdanchev          #+#    #+#             */
-/*   Updated: 2022/11/02 15:09:33 by mdanchev         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:56:04 by mdanchev         ###   lausanne.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
-#include "libft/libft.h"
 
 void	ft_put_hexanbr_fd(unsigned int n, int fd, int *count)
 {
@@ -19,7 +18,7 @@ void	ft_put_hexanbr_fd(unsigned int n, int fd, int *count)
 		ft_put_hexanbr_fd(n / 16, fd, count);
 		ft_put_hexanbr_fd(n % 16, fd, count);
 	}
-	if	(n < 10)
+	if (n < 10)
 		ft_printf_char(n + 48, fd, count);
 	else if (n > 9 && n < 16)
 		ft_printf_char(n + 87, fd, count);

@@ -6,7 +6,7 @@
 #    By: mdanchev <mdanchev@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/15 12:21:59 by mdanchev          #+#    #+#              #
-#    Updated: 2022/11/02 17:38:43 by mdanchev         ###   ########.fr        #
+#    Updated: 2022/11/03 11:06:36 by mdanchev         ###   lausanne.ch        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ NAME = libftprintf.a
 CC		= gcc
 RM		= rm -f
 
-CFLAGS = -Wall -Wextra -Werror 
+CFLAGS = -Wall -Wextra -Werror
 
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
@@ -33,17 +33,17 @@ $(NAME): libft/libft.a ${OBJS}
 	ar rcs $@ ${OBJS}
 
 clean:
-		${RM} ${OBJS} 
-		$(MAKE) -C libft clean
+		${RM} ${OBJS}
+		${MAKE} -C libft clean
 
 fclean:	clean
 		${RM} ${NAME}
-		$(MAKE) -C libft fclean
+		${MAKE} -C libft fclean
 
 re:		fclean all
 
 libft/libft.a:
-	$(MAKE) -C libft
+	${MAKE} -C libft
 
 
 .PHONY:	all clean fclean re

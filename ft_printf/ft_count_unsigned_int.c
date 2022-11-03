@@ -6,11 +6,10 @@
 /*   By: mdanchev <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 11:20:17 by mdanchev          #+#    #+#             */
-/*   Updated: 2022/11/02 14:43:28 by mdanchev         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:54:54 by mdanchev         ###   lausanne.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
-#include "libft/libft.h"
 
 int	ft_count_unsigned_int(unsigned int n)
 {

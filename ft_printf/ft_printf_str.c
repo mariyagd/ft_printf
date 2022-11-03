@@ -6,10 +6,9 @@
 /*   By: mdanchev <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:28:00 by mdanchev          #+#    #+#             */
-/*   Updated: 2022/11/02 14:33:11 by mdanchev         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:55:51 by mdanchev         ###   lausanne.ch       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft/libft.h"
 #include "ft_printf.h"
 
 void	ft_printf_str(char *s, int fd, int *count)
@@ -25,7 +24,7 @@ void	ft_printf_str(char *s, int fd, int *count)
 	}
 	else
 	{
-		ft_putstr_fd("(null)", 1);	
+		ft_putstr_fd("(null)", 1);
 		i = 6;
 	}
 	*count += i;
