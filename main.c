@@ -6,11 +6,11 @@
 /*   By: mdanchev <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 09:51:48 by mdanchev          #+#    #+#             */
-/*   Updated: 2022/11/02 16:22:25 by mdanchev         ###   ########.fr       */
+/*   Updated: 2023/02/09 10:18:38 by mdanchev         ###   lausanne.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
-#include "ft_printf.h"
+#include "ft_printf/ft_printf.h"
 
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
 	char	*s = "kitty";
 	char	*s1 = ":)";
 	char	*s2 = NULL;
-	int		d = 0;	
+	int		d = 0;
 	int		i = -545648;
 	result = ft_printf("Hello %s %c %s %% %d %i %s",s, c, s1, d, i, s2);
 	printf("\n");
@@ -65,7 +65,7 @@ int main(void)
 	printf("\nresult = %d\n", result);
 	printf("result1 = %d\n",result1);
 	printf("\n");
-    
+
 	unsigned int u1 = 4294967295;
     unsigned int u2 = 0;
     unsigned int u3 = -1;
